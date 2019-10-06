@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+docker run --rm -it \
+       -e "DISPLAY=unix$DISPLAY" \
+       -v /tmp/.X11-unix:/tmp/.X11-unix \
+       --device /dev/snd:/dev/snd \
+       yurifl/mtg
